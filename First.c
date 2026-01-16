@@ -16,7 +16,7 @@ int main() //main is the starting point of our program, it is a function. anythi
     printf("The value of a is %d\n", a); // print statement
 
     int b;
-    printf("Please enter the value of b:\n",b);
+    printf("Please enter the value of b:\n");
     scanf("%d", &b); // taking input from user
     printf("The value of b is %d\n", b);
 
