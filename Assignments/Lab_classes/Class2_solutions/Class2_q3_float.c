@@ -24,3 +24,8 @@ int main() {
 
     return 0;
 }
+
+//This needed math.h library for fmod function
+//Level: Beginner
+//Topic: Basic Arithmetic Operations in C with Floating Point Numbers
+//Difficulty: Easy
