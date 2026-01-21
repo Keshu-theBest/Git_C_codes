@@ -32,3 +32,7 @@ int main() {
 
     return 0;
 } 
+
+//Level: Beginner
+//Topic: Basic Input/Output in C
+//Difficulty: Easy
