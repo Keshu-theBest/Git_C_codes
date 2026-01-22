@@ -19,3 +19,7 @@ int main()
 
     return 0;
 }
+
+//Level: Beginner
+//Topic: Floating Point Arithmetic in C
+//Difficulty: Easy

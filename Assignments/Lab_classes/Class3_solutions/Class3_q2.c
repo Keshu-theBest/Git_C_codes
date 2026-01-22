@@ -1,3 +1,5 @@
+//Question 2: Write a program in C to swap two numbers.
+
 #include <stdio.h>
 
 int main()
@@ -30,3 +32,7 @@ int main()
 
     return 0;
 }
+
+//Level: Beginner
+//Topic: Variable Manipulation and Input/Output in C
+//Difficulty: Easy

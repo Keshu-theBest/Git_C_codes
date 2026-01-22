@@ -1,3 +1,5 @@
+//Question 1: Write a program in C to check whether the entered number is prime or not.
+
 #include <stdio.h>
 
 int main(){
@@ -42,3 +44,6 @@ int main(){
     return 0;
 }
 
+//Level: Intermediate
+//Topic: Conditional Statements and Loops in C
+//Difficulty: Decent

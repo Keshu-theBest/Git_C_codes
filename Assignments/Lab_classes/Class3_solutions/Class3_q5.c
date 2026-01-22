@@ -26,3 +26,8 @@ int main()
     printf("The sum of the digits is: %d\n\n", sum);
     return 0;
 }
+
+//Level: Intermediate
+//Topic: Looping and Arithmetic Operations in C
+//Difficulty: Very Good
+

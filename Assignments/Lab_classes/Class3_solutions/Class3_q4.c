@@ -16,3 +16,7 @@ int main()
 
     return 0;
 }
+
+//Level: Beginner
+//Topic: Character Handling and ASCII Values in C
+//Difficulty: Easy
