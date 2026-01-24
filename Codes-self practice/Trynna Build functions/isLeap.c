@@ -23,7 +23,11 @@ void isLeap(int Y)
 
     if (Leap)
     {
-        printf("\nThe given year %d is/was a leap year indeed!!\n\n",Y);
+        printf("\nThe year %d is/was a leap year indeed!!\n\n",Y);
+    }
+    else
+    {
+        printf("\nThe year %d is/was not leap.\n\n",Y)
     }
 }
 
