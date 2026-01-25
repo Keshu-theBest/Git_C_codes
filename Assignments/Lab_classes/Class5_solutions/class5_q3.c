@@ -10,9 +10,9 @@ int main()
 
     int k=(int)C; //Storing the ASCII value of the character
 
-    if (k>=65 %% k<=90)
+    if (k>=65 && k<=90)
         printf("The character you just gave is a capital ALPHABET from A-Z\n");
-    else if (k>=97 %% k<=122)
+    else if (k>=97 && k<=122)
         printf("The character you just gave is a small ALPHABET from a-z\n");
     else if (k>=48 && k<=59)
         printf("The character you just gave is a digit!\n");
