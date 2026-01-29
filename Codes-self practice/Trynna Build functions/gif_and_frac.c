@@ -1,6 +1,8 @@
 //gif rounds *down* to the nearest integer
 
 #include <stdio.h>
+#include "../../my_signature.h"
+
 
 int gif(float x)
 {
@@ -29,5 +31,7 @@ int main()
 
     printf("The gif(N) is: %d\n\n",gif(N));
     printf("The frac_pt(N) is: %f\n\n",frac_pt(N));
+
+    signature();
     return 0;
 }

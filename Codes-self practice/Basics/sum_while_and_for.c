@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include "../../my_signature.h"
+
 int sum_using_while(int n)
 {
     int sum=0;
@@ -13,7 +16,7 @@ int sum_using_while(int n)
 
 int sum_using_for(int n)
 {
-    int (sum=0);
+    int sum=0;
     for (int i=1;i<=n;i++)
     {
         sum += i;
@@ -32,6 +35,8 @@ int main()
 
     int sum2 = sum_using_for(number);
     printf("Sum using for loop: %d\n", sum2);
+
+    signature();
 
     return 0;
 }

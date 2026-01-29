@@ -1,6 +1,8 @@
 //Leap year or not
 
 #include <stdio.h>
+#include "../../my_signature.h"
+
 
 void isLeap(int Y)
 {
@@ -27,7 +29,7 @@ void isLeap(int Y)
     }
     else
     {
-        printf("\nThe year %d is/was not leap.\n\n",Y)
+        printf("\nThe year %d is/was not leap.\n\n",Y);
     }
 }
 
@@ -39,5 +41,6 @@ int main()
 
     isLeap(Y);
 
+    signature();
     return 0;
 }

@@ -2,6 +2,8 @@
 
 #include <stdio.h>
 #include <math.h>
+#include "../../my_signature.h"
+
 
 void roots(float a,float b,float c)
 {
@@ -52,6 +54,9 @@ int main()
     scanf("%f %f %f",&a,&b,&c);
 
     roots(a,b,c);
+
+    signature();
+    return 0;
 }
 
 //Very good practice question

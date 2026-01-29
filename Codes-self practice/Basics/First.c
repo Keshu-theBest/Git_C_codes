@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "../../my_signature.h" //personal signature header file: made by me
 /*This is called a preprocessor directive
 What it does?
 It tells our computer to make the contents of the stdio.h file available to our program, even before actual compilation starts.
@@ -19,6 +20,8 @@ int main() //main is the starting point of our program, it is a function. anythi
     printf("Please enter the value of b:\n");
     scanf("%d", &b); // taking input from user
     printf("The value of b is %d\n", b);
+
+    signature(); // calling my signature function from my_signature.h
 
     return 0; // return statement. See, main is of type int, so it must return an integer value. So we return 0, when program ends successfully.Otherwise, we can return some other integer value to indicate some error.
 }

@@ -4,6 +4,7 @@
 #include <math.h> //Obviously, stdio.h is not the only header file available to use
 //math.h header file contains inbuilt functions like pow(a,b) for a^b, sin(angle), cos(angle), the value pi and much more.
 //Go find out about it yourself from their official documentation, this will enrich the overall coding experience
+#include "../../my_signature.h" //Including my personal signature header file
 
 //Defining a function specifically to get the number of digits of any integer N
 int no_of_dig(int N)
@@ -71,6 +72,8 @@ int main()
         printf("The number is Armstrongs' number indeed!!\n\n");
     else
         printf("Sorry, the number is not Armstrongs' number\n\n");
+
+    signature();
 
     return 0;
 }

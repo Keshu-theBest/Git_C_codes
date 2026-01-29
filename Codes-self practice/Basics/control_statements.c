@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "../../my_signature.h"
 
 void with_if_else()
 {
@@ -114,6 +115,8 @@ int main()
 
     int sum2 = sum_using_for(number);
     printf("Sum using for loop: %d\n", sum2);
+
+    signature();
 
     return 0;
 }

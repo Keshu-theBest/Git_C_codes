@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include "../../my_signature.h"
+
 
 //Defining functions beforehand is a good practice if we think we might reus it in our program
 int fact(int n)
@@ -23,6 +25,8 @@ int main()
     scanf("%d",&N);
 
     printf("The factorial of %d is %d\n\n",N,fact(N));
+
+    signature();
     return 0;
 }
 

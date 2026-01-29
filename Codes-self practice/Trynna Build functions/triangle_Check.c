@@ -1,6 +1,8 @@
 //function to check for triangle and telling the type of triangle based on side lengths
 
 #include <stdio.h>
+#include "../../my_signature.h"
+
 
 int ifTr(float a,float b,float c)
 {
@@ -36,5 +38,6 @@ int main()
     else
         printf("The given sides can not form a triangle!!!\n\n");
     
+    signature();
     return 0;
 }

@@ -1,6 +1,8 @@
 //Program 1: Write a program to print the multiplication table of a given number//
 
 #include<stdio.h>
+#include "../../my_signature.h"
+
 
 int main()
 {
@@ -25,7 +27,9 @@ int main()
     }
     
     //extra spaces at the end because some terminals give post-code output also as in my terminal//
-    printf("\n\n\n")
+    printf("\n\n\n");
+
+    signature();
 
     return 0;
 }

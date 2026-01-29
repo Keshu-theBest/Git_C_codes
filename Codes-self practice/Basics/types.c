@@ -1,4 +1,6 @@
 #include<stdio.h>
+#include "../../my_signature.h"
+
 int main()
 {
     int a1 = 7;                 // 2 to 4 bytes
@@ -27,6 +29,9 @@ int main()
     printf("\nThe size of myfloat1 is %zu bytes\n",sizeof(myfloat1));
     printf("\nmyfloat2 is %Lf\n",myfloat2);
     printf("\nThe size of myfloat2 is %zu bytes\n",sizeof(myfloat2));
+
+    signature();
+    
     return 0;
 }
 

@@ -27,7 +27,7 @@ void isLeap(int Y)
     }
     else
     {
-        printf("\nThe year %d is/was not leap.\n\n",Y)
+        printf("\nThe year %d is/was not leap.\n\n",Y);
     }
 }
 
