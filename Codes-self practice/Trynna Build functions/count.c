@@ -1,3 +1,5 @@
+// [INCOMPLETE] - Logic for string indexing is broken, need to fix
+
 #include <stdio.h>
 #include <string.h>
 #include "../../my_signature.h"
@@ -5,6 +7,7 @@
 
 void count(char c)
 {
+    char s[100];
     printf("Please enter the string:\n");
     scanf("%s",&s);
 
