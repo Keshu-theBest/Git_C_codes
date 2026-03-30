@@ -176,6 +176,7 @@ int k_factorial(int n){
 
 //Function to check for leap year
 void k_isLeap(int Y){
+
     int Leap;
     if (Y>=0)
     {
@@ -213,6 +214,59 @@ void k_signature() {
     printf("%s   >> CODE BY KESHU %s[SYSTEM_ONLINE]%s <<   %s\n", cyan, green, cyan, reset);
     printf("%s========================================%s\n", cyan, reset);
     printf("%s      Github: github.com/Keshu-theBest    %s\n\n", green, reset);
+}
+
+// =========================================================
+// --- ENGINEERING MATHEMATICS HELPERS ---
+// =========================================================
+
+// GCD using Euclidean algorithm
+int k_gcd(int a, int b) {
+    while (b != 0) {
+        int t = b;
+        b = a % b;
+        a = t;
+    }
+    return a;
+}
+
+// LCM using GCD  (a/gcd first to prevent overflow)
+int k_lcm(int a, int b) {
+    return (a / k_gcd(a, b)) * b;
+}
+
+// Numerical derivative: central difference  f'(x) ≈ [f(x+h) - f(x-h)] / 2h
+double k_derivative(double (*f)(double), double x) {
+    double h = 1e-5;
+    return (f(x + h) - f(x - h)) / (2.0 * h);
+}
+
+// Numerical integration: Simpson's 1/3 rule over [a, b] with n intervals
+// n is made even automatically if an odd value is passed
+double k_integrate_simpson(double (*f)(double), double a, double b, int n) {
+    if (n % 2 != 0) n++;
+    double h = (b - a) / n;
+    double sum = f(a) + f(b);
+    for (int i = 1; i < n; i++) {
+        double x = a + i * h;
+        sum += (i % 2 == 0) ? 2.0 * f(x) : 4.0 * f(x);
+    }
+    return (h / 3.0) * sum;
+}
+
+// Mean of a double array
+double k_mean(double arr[], int n) {
+    double sum = 0;
+    for (int i = 0; i < n; i++) sum += arr[i];
+    return sum / n;
+}
+
+// Population standard deviation of a double array
+double k_stddev(double arr[], int n) {
+    double m = k_mean(arr, n);
+    double sum = 0;
+    for (int i = 0; i < n; i++) sum += (arr[i] - m) * (arr[i] - m);
+    return sqrt(sum / n);
 }
 
 #endif // 3. End the Guard
